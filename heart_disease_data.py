@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 def heart_disease_data():
-    df = pd.read_csv('cardio_train.csv')
+    # df = pd.read_csv('cardio_train.csv')
     # st.dataframe(df, use_container_width=True)
     # age = df['age'].values
     # # convert age string to int
@@ -41,9 +41,10 @@ def heart_disease_data():
     # st.dataframe(heart_data)
     X = heart_data.drop(columns = 'target', axis=1)
     Y = heart_data['target']
-    X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.2, stratify=Y, random_state=2)
+    X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.2, stratify=Y, random_state=10)
     model = LogisticRegression()
     model.fit(X_train, Y_train)
+    
    
     X_test_prediction = model.predict(X_test)
 
