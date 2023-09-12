@@ -29,6 +29,7 @@ def main():
                     When they feel like having some symtomps realted to this disease they can visit our website and predict the disease 
                     without even going to doctor and this model is very accurate.
                     We wanted to take care of the people so we made a good prediction model for this disease to save the life of the people""")
+        st.write("""This website is made by Mansi Tanna of the Charotar University of Science and Technology .""")
         # diabetes_dataset = pd.read_csv("./diabetes-dataset-cleaned.csv")
         # diabetes_dataset = diabetes_dataset.drop(columns = 'Pdiabetes', axis=1)
         # diabetes_dataset=diabetes_dataset.dropna(axis=0)
