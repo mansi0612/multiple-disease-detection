@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 
 
 def diabetes_predict():
-    diabetes_dataset = pd.read_csv("./diabetes-dataset-cleaned.csv")
+    diabetes_dataset = pd.read_csv("/diabetes-dataset-cleaned.csv")
     diabetes_dataset = diabetes_dataset.drop(columns = 'Pdiabetes', axis=1)
     diabetes_dataset=diabetes_dataset.dropna(axis=0)
     print(diabetes_dataset.shape)
